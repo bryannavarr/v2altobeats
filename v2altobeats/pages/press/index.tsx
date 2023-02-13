@@ -54,7 +54,7 @@ const Press = () => {
                 encodeURIComponent(k) + "=" + encodeURIComponent(params[k])
             )
             .join("&");
-          let response = await fetch("http://localhost:8080/?" + query);
+          let response = await fetch("https://server.altobeats.com/proxy/?" + query);
           let json = await response.json();
           if (
             json.metadata !== null &&
