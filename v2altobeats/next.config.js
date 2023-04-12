@@ -1,26 +1,24 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  basePath: "/about",
+
 };
 
 module.exports = nextConfig;
 
-module.exports = {
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/about',
-        permanent: true,
-      },
-      {
-        source: '/music',
-        destination: 'https://songwhip.com/altobeats',
-        permanent: true,
-      },
-    ]
-  },
-};
+// module.exports = {
+//   basePath: "/about",
+//   // async redirects() {
+//   //   return [
+//   //     {
+//   //       source: "/",
+//   //       destination: "/about",
+//   //       permanent: false,
+//   //     },
+//   //   ];
+//   // },
+// };
 
 module.exports = {
   images: {

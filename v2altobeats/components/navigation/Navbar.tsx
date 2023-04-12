@@ -7,16 +7,16 @@ const Navigation = () => {
         
         <nav className="navbar navbar-nav">
           <ul id="nav" className="cl-effect-1">
-            <li>
+            {/* <li>
               {" "}
               <Link className="navItem" href="/about">
                 {" "}
                 About
               </Link>
-            </li>
+            </li> */}
             <li>
               {" "}
-              <Link className="navItem" target="_blank" href="https://music.altobeats.com">
+              <Link className="navItem" href="/music">
                 {" "}
                 Music
               </Link>
