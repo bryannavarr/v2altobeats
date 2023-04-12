@@ -16,20 +16,20 @@ const Navigation = () => {
             </li>
             <li>
               {" "}
-              <Link className="navItem" target="_blank" href="/music">
+              <Link className="navItem" target="_blank" href="https://music.altobeats.com">
                 {" "}
                 Music
               </Link>
             </li>
 
             <li>
-              <a className="navItem" target="_blank" rel="noreferrer" href="https://alhrefbeats.bandcamp.com/">
+              <a className="navItem" target="_blank" rel="noreferrer" href="https://altobeats.bandcamp.com/">
                 Bandcamp
               </a>
             </li>
 
             <li>
-              <a className="navItem" target="_blank" rel="noreferrer" href="https://soundcloud.com/alhrefbeats01">
+              <a className="navItem" target="_blank" rel="noreferrer" href="https://soundcloud.com/altobeats01">
                 SoundCloud
               </a>
             </li>

@@ -6,13 +6,19 @@ const nextConfig = {
 module.exports = nextConfig;
 
 module.exports = {
-  async rewrites() {
+  async redirects() {
     return [
       {
-        source: "/",
-        destination: "/about",
+        source: '/',
+        destination: '/about',
+        permanent: true,
       },
-    ];
+      {
+        source: '/music',
+        destination: 'https://songwhip.com/altobeats',
+        permanent: true,
+      },
+    ]
   },
 };
 

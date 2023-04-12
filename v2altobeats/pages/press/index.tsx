@@ -10,6 +10,8 @@ interface MetaArray {
 
 const Press = () => {
   const pressLinks = [
+    "https://blackouthiphop.com/blog/river-nelson-ft-blu-treasures-remix/",
+    "https://www.wordplaymagazine.com/blog-1/2022/6/14/river-nelson-ft-blu-treasures-remix-single",
     "https://blackouthiphop.com/blog/video-river-nelson-altobeats-greatest-of-lights/",
     "https://beatboxradioshow.blogspot.com/2021/11/river-nelson-like-sun-didnt-sink-2021.html",
     "https://jammerzine.com/first-look-river-nelson-altobeats-greatest-of-lights/",
@@ -54,8 +56,11 @@ const Press = () => {
                 encodeURIComponent(k) + "=" + encodeURIComponent(params[k])
             )
             .join("&");
-          let response = await fetch("https://server.altobeats.com/proxy/?" + query);
+          let proxyURL = "https://server.altobeats.com/proxy/?";
+          // let proxyURL = "http://localhost:8080/?";
+          let response = await fetch(proxyURL + query);
           let json = await response.json();
+          console.log({json, link})
           if (
             json.metadata !== null &&
             json.metadata.images &&
@@ -65,7 +70,6 @@ const Press = () => {
           }
           counter++;
           if (counter == pressLinks.length) {
-            console.log(counter);
             setState(metaArr);
             setMetadataLoading(false);
           }
@@ -83,8 +87,8 @@ const Press = () => {
       <div className="flex flex-col items-center mt-12">
         {metadataLoading && <Loading />}
         {metadata.length > 0 &&
-          metadata.map(({ data }, index) => {
-            return <LinkPreview key={index} metadata={data} />;
+          metadata.map(({ data, _url}, index) => {
+            return <LinkPreview key={index} metadata={data} url={_url} />;
           })}
       </div>
     </React.Fragment>

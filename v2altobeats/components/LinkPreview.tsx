@@ -1,7 +1,14 @@
 import React from "react";
 import Image from "next/image";
 
-export const LinkPreview = ({ metadata }: { metadata: any }) => {
+export const LinkPreview = ({
+  metadata,
+  url,
+}: {
+  metadata: any;
+  url: string;
+}) => {
+  console.log(url);
   const { images, meta, og } = metadata;
   return (
     <React.Fragment>
