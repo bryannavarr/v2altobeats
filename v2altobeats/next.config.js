@@ -1,15 +1,15 @@
 module.exports = {
   trailingSlash: true,
   reactStrictMode: true,
-  async redirects() {
-    return [
-      {
-        source: "/",
-        destination: "/about",
-        permanent: true,
-      },
-    ];
-  },
+  // async redirects() {
+  //   return [
+  //     {
+  //       source: "/",
+  //       destination: "/about",
+  //       permanent: true,
+  //     },
+  //   ];
+  // },
   images: {
     unoptimized: true,
 
