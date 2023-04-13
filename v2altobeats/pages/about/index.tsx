@@ -1,7 +1,11 @@
 import React from "react";
-import Image from 'next/image'
+import Image from "next/image";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    console.log(window.location);
+  });
   return (
     <React.Fragment>
       <div className="w-3/4 justify-center mx-auto sm:w-1/2 text-lg mt-12">
@@ -10,7 +14,9 @@ const About = () => {
         </h1>
         <div className="">
           <Image
-            src={"https://altobeats-assets.s3.us-west-1.amazonaws.com/ALTO-7.jpg"}
+            src={
+              "https://altobeats-assets.s3.us-west-1.amazonaws.com/ALTO-7.jpg"
+            }
             className="justify-center mx-auto mt-12"
             alt="altobeats dj"
             width={300}

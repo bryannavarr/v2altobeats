@@ -6,7 +6,6 @@ const Music = () => {
     useEffect(() => {
         window.location.replace('https://songwhip.com/altobeats')
     })
-//   window.location.replace("https://songwhip.com/altobeats");
   return <React.Fragment></React.Fragment>;
 };
 

@@ -1,25 +1,15 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-
-};
-
-module.exports = nextConfig;
-
-// module.exports = {
-//   basePath: "/about",
-//   // async redirects() {
-//   //   return [
-//   //     {
-//   //       source: "/",
-//   //       destination: "/about",
-//   //       permanent: false,
-//   //     },
-//   //   ];
-//   // },
-// };
-
 module.exports = {
+  trailingSlash: true,
+  reactStrictMode: true,
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/about",
+        permanent: true,
+      },
+    ];
+  },
   images: {
     unoptimized: true,
 
