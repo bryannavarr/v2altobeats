@@ -57,6 +57,13 @@ const Navigation = () => {
                 Press
               </Link>
             </li>
+            <li>
+              {" "}
+              <Link className="navItem" href="/contact">
+                {" "}
+                Contact
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>

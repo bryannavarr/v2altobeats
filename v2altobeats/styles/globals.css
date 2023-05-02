@@ -247,12 +247,11 @@ html {
     }
     #nav > li {
       flex-basis: 50%;
-      margin: 4%;
+      margin: 3%;
       /* font-size:1px; */
     }
     #nav {
       flex-wrap: wrap;
-      margin-left: 2vh;
       /* margin:0; */
     }
     #root {
@@ -328,9 +327,9 @@ html {
     position: relative;
   }
   
-  ul {
+  /* ul {
     margin-left: -2%;
-  }
+  } */
   
   
   .colum {

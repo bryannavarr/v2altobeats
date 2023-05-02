@@ -88,17 +88,17 @@ const Footer = () => {
                 </div> */}
               </div>
             </div>
-            <div className="mt-28 flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-400">
+            <div className="mt-28 flex flex-col md:flex-row justify-center mx-auto text-sm text-gray-400">
               <p className="order-2 md:order-1 mt-8 md:mt-0">
                 {" "}
-                &copy; AltoBeats, LLC, 2023. All Rights Reserved.{" "}
+                &copy; AltoBeats LLC, 2023. All Rights Reserved.{" "}
               </p>
 
-              <div className="order-1 md:order-2">
+              {/* <div className="order-1 md:order-2">
                 <p>
                   Contact: <strong>altobeatsinfo@gmail.com </strong>
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
