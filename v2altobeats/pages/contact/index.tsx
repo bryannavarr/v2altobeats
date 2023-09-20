@@ -62,8 +62,7 @@ const Contact = () => {
       <div className="w-3/4 justify-center text-center mx-auto sm:w-1/2 text-lg mt-12">
         <h1 className="text-4xl text-center md:text-5xl mb-2">Contact Us</h1>
         <p className="lg:w-2/3 mx-auto mt-6 mb-8 leading-relaxed text-base">
-          Have an inquiry or comment? Fill out the form below and we'll get back
-          to you as soon as possible.
+          For general inquiries, beat licensing, or sync lincensing, please fill out the form below:
         </p>
       </div>
       <div className="lg:w-1/2 md:w-2/3 mx-auto">

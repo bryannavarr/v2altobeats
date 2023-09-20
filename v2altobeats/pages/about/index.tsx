@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { useEffect } from "react";
 
 const About = () => {
   return (
@@ -20,42 +19,36 @@ const About = () => {
             height={300}
           />
         </div>
-
         <div className="text-center mt-14">
           <p>
-            AltoBeats is a beat maker and music producer from Pacoima, Los
-            Angeles, California. He learned how to make beats in the early 2000s
-            at the Hazze Hip Hop Culture Dream Center, a Section 501(c)(3)
-            non-profit organization located in Pacoima. An audio engineer, who
-            was, at the time, working on audio effects for Call Of Duty, visted
-            the center and volunteered to teach students the art of sampling and
-            beat making. AltoBeats attended the first class and was hooked
-            instantly. There, he learned the basics of drum sequencing,
-            sampling, and music studio setup. The center was unlike any venue
-            that existed in Pacoima during the early 2000s. It was filled with
-            people from all walks of life and the energy was filled with
-            positivity, love, and hip hop. Bboys, bgirls, djs, artists, fitness
-            trainers were some of regulars that dropped in on a regular basis.
+            AltoBeats is a music producer and beat maker hailing from Pacoima,
+            Los Angeles, California. He discovered his passion for beat making
+            in the early 2000s while attending the Hazze Hip Hop Culture Dream
+            Center, a non-profit organization located in Pacoima. During one of
+            the center's classes, an audio engineer who was working on audio
+            effects for Call Of Duty, volunteered to teach students the art of
+            sampling and beat making. AltoBeats attended the class and became
+            instantly hooked, learning the basics of drum sequencing, sampling,
+            and music studio setup. The center was a unique hub of creativity
+            and positivity, attracting people from all walks of life, including
+            bboys, bgirls, DJs, artists, and fitness trainers.
           </p>
           <br />
           <p>
-            AltoBeats continues to practice the art of sampling and beat making
-            by studying the big names in music production such as J Dilla,
-            Madlib, 9th Wonder, Freddie Joachim, RZA, Apollo Brown, The
-            Alchemist, Quincy Jones, Johan Johansson, Stro Elliot, and many
-            others. His beats encompass and mix the styles of Boom Bap,
-            Neo-Soul, Lo-fi, Jazz, Electronic. His instrumentals are a mixture
-            of sample based loops and original compositions that utilize various
-            instruments such as pianos, strings, synths, and classic drum
-            breaks.
+            Today, AltoBeats continues to refine his craft by studying the works
+            of legendary music producers like J Dilla, Madlib, 9th Wonder, RZA,
+            Apollo Brown, and Quincy Jones. He blends different genres,
+            including Boom Bap, Neo-Soul, Lo-fi, Jazz, and Electronic, to create
+            his unique sound. AltoBeats' instrumentals are a combination of
+            sample-based loops and original compositions that employ a range of
+            instruments like pianos, strings, synths, and classic drum breaks.
           </p>
           <br />
           <p>
             {" "}
-            AltoBeats has collaborated and worked with some underground artists
-            such as River Nelson, Blu (from Blu & Exile), Rae Patria, Madseas,
-            And Cosmik Knowledge. His music can also be heard on the Muscle
-            Company’s{" "}
+            AltoBeats has collaborated with various underground artists such as
+            River Nelson, Blu (from Blu & Exile), Rae Patria, Madseas, and
+            Cosmik Knowledge. You can also find his music on Muscle Company's{" "}
             <a href="https://www.youtube.com/watch?v=ehqUFZTxZdU">
               youtube channel
             </a>{" "}

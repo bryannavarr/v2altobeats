@@ -6,7 +6,6 @@ const Footer = () => {
   const [success, setSuccess] = useState<boolean>(false);
 
   const onChange = (e: any) => {
-    console.log("sindie user email change");
     setUserEmail(e.target.value);
   };
 
@@ -16,7 +15,9 @@ const Footer = () => {
       subscribeService
         .subscribe(email)
         .then((response) => {
-          if (response.isSuccessful || response == "success") {
+          console.log({response})
+
+          if (response.success) {
             setSuccess(true);
             setUserEmail("");
           }

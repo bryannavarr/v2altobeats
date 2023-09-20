@@ -1,24 +1,26 @@
 import Head from "next/head";
 import React from "react";
-import styles from "@/styles/Home.module.css";
 import Image from "next/image";
+import { youtubeVideoIds } from "@/constants/lists";
 
 export default function Home() {
+
   return (
     <>
       <Head>
-        <title>AltoBeats Home</title>
+        <title>AltoBeats</title>
         <meta
           name="description"
           content="AltoBeats is a hip hop music producer and beat maker."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/ab.ico" />
+  
       </Head>
-      <main className={styles.main}>
-        <div className="mt-10">
+      <main>
+        <div className="mt-10 mb-10">
           <div className="rowe">
-            <h1 className='font-bold text-3xl'>Featured Single</h1>
+            {/* <h1 className="font-bold text-3xl">Featured Single</h1> */}
 
             <a
               className="set"
@@ -34,6 +36,23 @@ export default function Home() {
               </span>
             </a>
           </div>
+        </div>
+        <div className="aspect-video mt-auto mx-auto flex flex-col items-center justify-center content-between space-y-6">
+          {youtubeVideoIds.map((videoId, i) => {
+            return (
+              <div key={i}>
+                <iframe
+                  className="rounded-lg shadow-lg sm:m-2"
+                  width="560"
+                  height="315"
+                  src={`https://www.youtube.com/embed/${videoId}`}
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            );
+          })}
         </div>
       </main>
     </>

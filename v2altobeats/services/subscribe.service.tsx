@@ -2,7 +2,7 @@ import axios from "axios";
 
 const headers = { "Content-Type": "application/json" };
 
-// let endpoint = "http://localhost:5000";
+// let endpoint = "http://localhost:5001";
 let endpoint = "https://server.altobeats.com";
 
 export const subscribe = (email: string) => {
