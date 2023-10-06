@@ -45,7 +45,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Script
         strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-7K3LGJP9W3"
+        src="https://www.googletagmanager.com/gtag/js?id=G-LTCERRL7Y4"
       />
         
       <Script
@@ -56,7 +56,7 @@ export default function App({ Component, pageProps }: AppProps) {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-7K3LGJP9W3', {
+          gtag('config', 'G-LTCERRL7Y4', {
             page_path: window.location.pathname,
           });
         `,
