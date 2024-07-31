@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+
+.loader {
+  background: transparent;
+  width: 100px;
+  height: 100px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.bar {
+  display: block;
+  bottom: 0px;
+  width: 9px;
+  height: 5px;
+  background: #05B8CC;
+  position: absolute;
+  animation: soundBar 3s infinite ease-in-out;
+}
+
+.bar:nth-child(1) {
+  left: 0px;
+}
+
+.bar:nth-child(2) {
+  left: 10px;
+  animation-delay:.2s;
+}
+
+.bar:nth-child(3) {
+  left: 20px;
+  animation-delay:.4s;
+}
+
+.bar:nth-child(4) {
+  left: 30px;
+  animation-delay:.6s;
+}
+
+.bar:nth-child(5) {
+  left: 40px;
+  animation-delay:.8s;
+}
+
+.bar:nth-child(6) {
+  left: 50px;
+  animation-delay:1s;
+}
+
+.bar:nth-child(7) {
+  left: 60px;
+  animation-delay:1.2s;
+}
+
+.bar:nth-child(8) {
+  left: 70px;
+  animation-delay:1.4s;
+}
+
+@keyframes soundBar {
+	0% {height: 5px; background:#05B8CC}
+	20% {height: 50px; background:#DD0048}
+	40% {height: 5px; background:#05B8CC}
+	60% {height: 5px; background:#05B8CC}
+}
