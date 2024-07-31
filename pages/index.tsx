@@ -1,11 +1,11 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import React from "react";
+import About from "./about";
+import Releases from "./releases";
+import Videos from "./videos";
 
 export default function Home() {
-  // return redirect('/about');
-  // const router = useRouter()
-  // router.push('/about')
 
   return (
     <>
@@ -20,7 +20,9 @@ export default function Home() {
 
       </Head>
       <main>
-
+        <About />
+        <Releases />
+        <Videos />
       </main>
     </>
   );

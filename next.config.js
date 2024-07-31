@@ -1,8 +1,7 @@
 module.exports = {
-  trailingSlash: false,
+  trailingSlash: true,
   images: {
     unoptimized: true,
-
     remotePatterns: [
       {
         protocol: "https",
@@ -39,13 +38,13 @@ module.exports = {
     ],
   },
   eslint: { ignoreDuringBuilds: true },
-  async redirects() {
-    return [
-      {
-        source: "/",
-        destination: "/about",
-        permanent: true,
-      },
-    ];
-  },
+  // async redirects() {
+  //   return [
+  //     {
+  //       source: "/",
+  //       destination: "/about",
+  //       permanent: true,
+  //     },
+  //   ];
+  // },
 };
